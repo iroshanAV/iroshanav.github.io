@@ -1,63 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+                <title>Bootstrap Example</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <link rel="stylesheet" href="css/style.css">
+                <!-- Fonts -->
+                <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
-  <head>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-image.png" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+                <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
-    <title>Iroshan's portfolio</title>
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+                <script>
+                        $(window).scroll(function(){
+         $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
+     });
+                       </script>
 
+              </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <a href="navbar-brand">
+              <div class="logo">
+                  <img src="img/logo.png" alt="">
+              </div>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav navbar-right">
+               <li><a href="#">Home</a></li>
+               <li><a href="#photo">Photoapp</a></li>
+               <li><a href="#design">Design</a></li>
+               <li><a href="#community">Community</a></li>
+               <li><a href="#download">Download</a></li>
+
+           </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider -->
+    <section id="slider" class="text-center">
+      <div class="container">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h1>Iroshan Vithanage</h1>
+                    <h2>Life is awesome</h2>
+                    <button type="button" class="btn btn-success">Slide One</button>
+                </div>
+
+                <div class="item ">
+                     <h1>Iroshan Vithanage</h1>
+                     <h2>Life is awesome</h2>
+                     <button type="button" class="btn btn-success">Slide Two</button>
+                </div>
+
+                <div class="item ">
+                     <h1>Iroshan Vithanage</h1>
+                     <h2>Life is awesome</h2>
+                     <button type="button" class="btn btn-success">Slide Three</button>
+                </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- End Slider -->
+    <br>
+    <!--Think-Tank-->
+      <section id="think-tank">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h1> Think</h1>
+                <i class="fas fa-lightbulb fa-4x"></i>
+                <p> I think what should i have to apply.<br>What colors should have to be there</p>
+
+            </div>
+
+              <div class="col-md-4">
+                <h1> Design</h1>
+                <i class="fas fa-pencil-alt fa-4x"></i>
+                <p> I design how things should be arranged.<br> Where to put these buttons and forms</p>
+              </div>
+
+              <div class="col-md-4">
+                 <h1>Develop</h1>
+                 <i class="fas fa-wrench fa-4x">  </i>
+                 <p>Finally i make them according to plan. <br> I test them. </p>
+
+                </div>
+            </div>
+        </div>
+
+      </section>
+    <!--End Think Tank-->
+    <br>
+    <!-- About Me -->
+     <section id="about-me">
+         <div class="container">
+         <h1>About Me</h1>
+           <div class="row">
+               
+              <div class="col-md-6">
+                  <img src="img/prop.png" class="img-responsive" alt="">
+              </div>
+              <div class="col-md-6">
+                  <h1 id="hello">Hello !</h1>
+                  <p>My name is <b>Iroshan</b>.Currently i'm a BSc (Computer Science) student in the National School of Business Management, affiliated to
+                        the University College of Dublin, Ireland. (Successfully completed 1st, 2nd and 3rd Year examinations
+                        current GPA – 3.53)</p>
+                   <p>I like to make things. I specially like to do frontend development stuff with HTML,CSS, Javascript, Bootstrap and Javascript
+                       frameworks and learn further more 😊😎 </p>
+              </div>
+           </div> 
+         </div>
+
+     </section>
+
+    <!-- End About Me -->
+     <br>
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+                <h1>Skills</h1>
+            <div class="row">
+               
+                    <progress value="60" max="100"></progress><span>JavaScript</span>
+                    <progress value="70" max="100"></progress><span>HTML5/CSS3</span>
+                    <progress value="80" max="100"></progress><span>Bootstrap</span>
+                    <progress value="60" max="100"></progress><span>C#/PHP</span>
+                    <progress value="60" max="100"></progress><span>MySQL</span>
+                    <progress value="60" max="100"></progress><span>Angular/Ionic</span>
+            </div>
+        </div>
+           
+    </section>
+
+    <!-- End Skills -->
+    <br>
+    <!-- Projects -->
+    <section id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                    <div class="row">
+                        <div class='list-group gallery'>
+                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                    <h3>Help me to find</h3>
+                                    <div class='text-right'>
+                                        <small class='text-muted'>Image Title</small>
+                                    </div> <!-- text-right / end -->
+                                </a>
+                            </div> <!-- col-6 / end -->
+                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                    <h3>My Portfolio</h3>
+                                    <div class='text-right'>
+                                        <small class='text-muted'>Image Title</small>
+                                    </div> <!-- text-right / end -->
+                                </a>
+                            </div> <!-- col-6 / end -->
+                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                    <h3>Woocommerc_Ionic App</h3>
+                                    <div class='text-right'>
+                                        <small class='text-muted'>Image Title</small>
+                                    </div> <!-- text-right / end -->
+                                </a>
+                            </div> <!-- col-6 / end -->
+
+                        </div> <!-- list-group / end -->
+                    </div> <!-- row / end -->
+
+                    <div class="row">
+                            <div class='list-group gallery'>
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>Foker</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>AAA</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>Olu Mobile App/Web Site</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>Image Title</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>StockMarket App</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>Image Title</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
     
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                            </div> <!-- list-group / end -->
+                        </div> <!-- row / end -->
 
-   
-    <link href="css/full.css" rel="stylesheet">
-
-  </head>
-
- 
-
+                        <div class="row">
+                            <div class='list-group gallery'>
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>iads.lk</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>AAA</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>skygate.lk</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>Image Title</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
+                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
+                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
+                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
+                                        <h3>smartvisual.lk</h3>
+                                        <div class='text-right'>
+                                            <small class='text-muted'>Image Title</small>
+                                        </div> <!-- text-right / end -->
+                                    </a>
+                                </div> <!-- col-6 / end -->
     
-    <body>
-      <div id="particles-js"></div>
-      
-
-                <center>
-                  <section class="content">
-                    <h1 id="heading_h1" ><b>Hey, my name is Iroshan</b></h1>
-                      <br>
-                        <img src="assets/profp.jpg" class="shake">
-						<br>
-                    <h2>I am learning to be a Full Stack engineer </h2>
-                        <h3>I'm good at HTML, CSS, Javascript and familiar with MEAN Stack, .NET Stack and little bit of PHP...</h3>
-                  </section>                  
-                </center>
-
-  	<div class="wrapper">
-	  	<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
-          <li><a href="https://www.facebook.com/iroshan.vithanage"><i class="fa fa-facebook"></i></a> </li> 
-          <li> <a href="https://twitter.com/iroshanav"><i class="fa fa-twitter"></i></a></li>
-          <li> <a href="https://plus.google.com/+IroshanVithanage"><i class="fa fa-google-plus"></i></a></li>
-          <li> <a href="https://www.youtube.com/channel/UCA5IaTWbb9_ckFHNiQA9VxA"><i class="fa fa-youtube"></i></a></li>
-          <li> <a href="https://www.linkedin.com/in/iroshanav/"><i class="fa fa-linkedin"></i></a></li> 
-          <li> <a href="https://stackoverflow.com/users/5222902/avi?tab=profile"><i class="fa fa-stack-overflow"></i></a></li>   
-          <li> <a href="https://github.com/iroshanAV"><i class="fa fa-github"></i></a></li>  
-          <li> <a href="https://iroshanavs.blogspot.com/"> <i class="fa fa-book" style="font-size:36px"></i></a></li>
-    	</ul>
-	  </div> 
-    </body>
-    
-    <script src="text/Javascript" src="js/particles.js"></script>
-      <script src="text/Javascript" src="js/app.js"></script>
-    
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                            </div> <!-- list-group / end -->
+                        </div> <!-- row / end -->
+                </div> <!-- container / end -->
 
 
+    </section>
 
+    <!-- End Projects -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>$(function() {
+            $('progress').each(function() {
+              var max = $(this).val();
+              $(this).val(0).animate({ value: max }, { duration: 2000, easing: 'easeOutCirc' });
+                      });
+          });</script>
+          <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+          <script>
+                $('#think-tank').waypoint(function() {
+         alert('Change your background color of div');
+         $('.nav').css('color', 'yellow');
+     }, {
+         offset: '5%'
+     });
+               </script>
+               <script>$(document).ready(function(){
+                    //FANCYBOX
+                    //https://github.com/fancyapps/fancyBox
+                    $(".fancybox").fancybox({
+                        openEffect: "none",
+                        closeEffect: "none"
+                    });
+                });
+                   
+                  </script>
+
+                 
+  </body>
 </html>

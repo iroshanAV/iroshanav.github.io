@@ -1,0 +1,183 @@
+
+body{
+    font-family: 'Righteous', cursive;
+    color: #22a6b3;
+  
+
+}
+/* Navbar */
+
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-nav {
+    font-family: 'Righteous', cursive;
+    margin:35px 100px 0;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #fff;
+}
+
+ 
+.navbar-default .navbar-nav li a:hover{
+    color:  #22a6b3; 
+} 
+
+
+/* Media Queries */
+@media(max-width:768px){
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar-toggle{
+        margin-top: 45px;
+        background-color: #FFF;
+    }
+
+    #about-me{
+        text-align: center;
+    }
+}
+
+
+/* Slider */
+
+#slider {
+    background:url('../img/bg6.jpg');
+    width:100%;
+    background-size: cover;
+}
+
+.item{
+   color:#fff; 
+   padding: 200px 0;
+}
+
+.item h1 {
+    font-size: 2.8em;
+}
+
+.carousel-indicators li{
+    background-color: #fff;
+    margin:5px;
+}
+
+.carousel-indicators .active{
+    background-color: #22a6b3;
+    border: 1px solid #22a6b3;
+    margin: 5px;
+}
+
+
+.btn-success{
+    background-color: #22a6b3;
+    border: #22a6b3;
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    margin: 15px 0;
+}
+
+.btn-success:hover{
+    background-color: #2E2FC8;
+}
+
+
+/*Think icon */
+
+
+#think-tank {
+    color:#22a6b3; 
+    padding: 80px 0 80px;
+    text-align: center;
+}
+
+#think-tank h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    color:#22a6b3;
+}
+
+#think-tank .fas{
+color: #22a6b3;
+}
+
+#think-tank .fas:hover{
+color:#2E2FC8;
+}
+
+
+/* About Me */
+
+#about-me{ 
+    padding: 80px 0 80px;
+}
+
+
+#about-me h1{
+  
+}
+
+#hello{
+    color: #2E2FC8;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top:35px; 
+}
+
+/*Skills*/
+
+#skills span {
+    top: -30px;
+    left: 2%;
+    position: relative;
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: monospace;
+    color: #fff;
+}
+
+progress {
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2.5em;
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #329ad1;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
+
+
+/*Image Gallery*/
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+.blur {
+    -webkit-filter: blur(4px)
+    
+}
+
+
+/* Nav color */
+body{min-height:200vh;}
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:#2450D5;
+}
