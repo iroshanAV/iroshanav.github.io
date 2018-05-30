@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-                <title>Bootstrap Example</title>
+                <title>Iroshan Vithanage</title>
                 <meta charset="utf-8">
+                <link rel="icon" href="img/fav.jpg" type="image/gif" sizes="16x16">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,15 +13,33 @@
                 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
                 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-
+               
                 <!-- Font Awesome -->
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+                
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+                <link rel="stylesheet" href="css/animate.min.css">
                 <script>
                         $(window).scroll(function(){
          $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
      });
                        </script>
 
+
+
+<script>
+    $(document).ready(function(){
+         //FANCYBOX
+         //https://github.com/fancyapps/fancyBox
+         $(".fancybox").fancybox({
+             openEffect: "none",
+             closeEffect: "none"
+         });
+     })(jQuery.noConflict());
+        
+       </script>
+             
               </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -43,10 +62,10 @@
         <div class="navbar-collapse collapse">
            <ul class="nav navbar-nav navbar-right">
                <li><a href="#">Home</a></li>
-               <li><a href="#photo">Photoapp</a></li>
-               <li><a href="#design">Design</a></li>
-               <li><a href="#community">Community</a></li>
-               <li><a href="#download">Download</a></li>
+               <li><a href="#about-me">About Me</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <!-- <li><a href="#download">Download</a></li> -->
 
            </ul>
         </div>
@@ -58,20 +77,20 @@
     <section id="slider" class="text-center">
       <div class="container">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
 
-            </ol>
-            <div class="carousel-inner">
+            </ol> -->
+            <div class="carousel-inner wow fadeIn">
                 <div class="item active">
                     <h1>Iroshan Vithanage</h1>
                     <h2>Life is awesome</h2>
-                    <button type="button" class="btn btn-success">Slide One</button>
+                   
                 </div>
 
-                <div class="item ">
+                <!-- <div class="item ">
                      <h1>Iroshan Vithanage</h1>
                      <h2>Life is awesome</h2>
                      <button type="button" class="btn btn-success">Slide Two</button>
@@ -81,7 +100,7 @@
                      <h1>Iroshan Vithanage</h1>
                      <h2>Life is awesome</h2>
                      <button type="button" class="btn btn-success">Slide Three</button>
-                </div>
+                </div> -->
             </div>
           </div>
 
@@ -94,20 +113,20 @@
       <section id="think-tank">
         <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 wow fadeIn">
                 <h1> Think</h1>
                 <i class="fas fa-lightbulb fa-4x"></i>
                 <p> I think what should i have to apply.<br>What colors should have to be there</p>
 
             </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4  wow fadeIn" data-wow-delay="0.2s">
                 <h1> Design</h1>
                 <i class="fas fa-pencil-alt fa-4x"></i>
                 <p> I design how things should be arranged.<br> Where to put these buttons and forms</p>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4  wow fadeIn"  data-wow-delay="0.4s">
                  <h1>Develop</h1>
                  <i class="fas fa-wrench fa-4x">  </i>
                  <p>Finally i make them according to plan. <br> I test them. </p>
@@ -125,16 +144,22 @@
          <h1>About Me</h1>
            <div class="row">
                
-              <div class="col-md-6">
+              <div class="col-md-6 wow bounceInLeft" align="center">
                   <img src="img/prop.png" class="img-responsive" alt="">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 wow bounceInRight">
                   <h1 id="hello">Hello !</h1>
                   <p>My name is <b>Iroshan</b>.Currently i'm a BSc (Computer Science) student in the National School of Business Management, affiliated to
                         the University College of Dublin, Ireland. (Successfully completed 1st, 2nd and 3rd Year examinations
                         current GPA – 3.53)</p>
                    <p>I like to make things. I specially like to do frontend development stuff with HTML,CSS, Javascript, Bootstrap and Javascript
                        frameworks and learn further more 😊😎 </p>
+                    <div class="col-md-6">
+                        <h1 id="hello">Work Experience</h1>
+                        <h4>Megasuperb - Since 2016</h4>
+                        <p>Small Company which started by my friends</p>
+
+                    </div>
               </div>
            </div> 
          </div>
@@ -147,7 +172,7 @@
     <section id="skills">
         <div class="container">
                 <h1>Skills</h1>
-            <div class="row">
+            <div class="row  wow bounceIn">
                
                     <progress value="60" max="100"></progress><span>JavaScript</span>
                     <progress value="70" max="100"></progress><span>HTML5/CSS3</span>
@@ -164,112 +189,201 @@
     <br>
     <!-- Projects -->
     <section id="projects">
-            <div class="container">
+            <div class="container wow pulse">
                 <h1>Projects</h1>
-                    <div class="row">
-                        <div class='list-group gallery'>
-                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                    <h3>Help me to find</h3>
-                                    <div class='text-right'>
-                                        <small class='text-muted'>Image Title</small>
-                                    </div> <!-- text-right / end -->
-                                </a>
-                            </div> <!-- col-6 / end -->
-                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                    <h3>My Portfolio</h3>
-                                    <div class='text-right'>
-                                        <small class='text-muted'>Image Title</small>
-                                    </div> <!-- text-right / end -->
-                                </a>
-                            </div> <!-- col-6 / end -->
-                            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                    <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                    <h3>Woocommerc_Ionic App</h3>
-                                    <div class='text-right'>
-                                        <small class='text-muted'>Image Title</small>
-                                    </div> <!-- text-right / end -->
-                                </a>
-                            </div> <!-- col-6 / end -->
+                <ul class="top">
+                    <li class="galleryItem">
+                      <a class="caption" href="#1" data-title="Stockexchge simulator Game" data-description="Stockexchge simulator game, front end made with Bootstrap/Angular and Backed with Java/Spring MVC">
+                        <img src="img/stock.png" alt="Landscape image">
+                      </a>
+                    </li>
+                    <li class="galleryItem">
+                      <a class="caption" href="#2" data-title="iAds.lk" data-description="iads.lk is a classified web site, made with PHP, MySQL, Bootstrap">
+                        <img src="img/iads.png" alt="Landscape image">
+                      </a>
+                    </li>
+                    <li class="galleryItem">
+                      <a class="caption" href="#3" data-title="Foker Game" data-description="Foker is a Poker like card game , made with Java and JavaFX">
+                        <img src="img/foker.png" alt="Landscape image">
+                      </a>
+                    </li>
+                    <li class="galleryItem">
+                      <a class="caption" href="#4" data-title="Help Us to Find" data-description="Help Us to find is community based app, which helps you to find your missed loved ones. Made with NodeJs,Bootstrap,MongoDB">
+                        <img src="img/helpus.png" alt="Landscape image">
+                      </a>
+                    </li>
+                    <li class="galleryItem">
+                      <a class="caption" href="#5" data-title="Olu App and Web site" data-description="Olu is a salon booking app made with, wordpress and intel XDK">
+                        <img src="img/olu.png" alt="Landscape image">
+                      </a>
+                    </li>
+                    <li class="galleryItem">
+                      <a class="caption" href="#6" data-title="Woocommerce Ionic" data-description="Woocommerce ionic is a shopping platform app, which is made with Angular/Ionic with Wordpress Rest API">
+                        <img src="img/woocom_ionic.png" alt="Landscape image">
+                      </a>
+                    </li>
 
-                        </div> <!-- list-group / end -->
-                    </div> <!-- row / end -->
 
-                    <div class="row">
-                            <div class='list-group gallery'>
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>Foker</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>AAA</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>Olu Mobile App/Web Site</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>Image Title</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>StockMarket App</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>Image Title</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-    
-                            </div> <!-- list-group / end -->
-                        </div> <!-- row / end -->
-
-                        <div class="row">
-                            <div class='list-group gallery'>
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>iads.lk</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>AAA</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>skygate.lk</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>Image Title</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-                                <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
-                                    <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/300x320.png">
-                                        <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                                        <h3>smartvisual.lk</h3>
-                                        <div class='text-right'>
-                                            <small class='text-muted'>Image Title</small>
-                                        </div> <!-- text-right / end -->
-                                    </a>
-                                </div> <!-- col-6 / end -->
-    
-                            </div> <!-- list-group / end -->
-                        </div> <!-- row / end -->
+                    <li class="galleryItem">
+                        <a class="caption" href="#7" data-title="smartvisual.lk" data-description="Wordpress web site for a local client">
+                          <img src="img/smartv.png" alt="Landscape image">
+                        </a>
+                      </li>
+                      <li class="galleryItem">
+                        <a class="caption" href="#8" data-title="Nsbm Notify" data-description="NSBM Notify is a app which students can get updates from NSBM, made with Android and PHP backend">
+                          <img src="img/nsbm.png" alt="Landscape image">
+                        </a>
+                      </li>
+                      <li class="galleryItem">
+                        <a class="caption" href="#9" data-title="skygate.lk" data-description="Wordpress web site for a local client">
+                          <img src="img/skyG.png" alt="Landscape image">
+                        </a>
+                      </li>
+                      <li class="galleryItem">
+                        <a class="caption" href="#10" data-title="Ministry of Skills Development and Vocational Training" data-description="official website of Ministry of Skills Development and Vocational Training">
+                          <img src="img/ministry.png" alt="Landscape image">
+                        </a>
+                      </li>
+                      <li class="galleryItem">
+                        <a class="caption" href="#11" data-title="My Portfolio" data-description="My portfolio">
+                          <img src="img/portfolio.png" alt="Landscape image">
+                        </a>
+                      </li>
+                  </ul>
+                      
+                  <!-- lightbox -->
+                  
+                   <div class="lightbox" id="1">
+                     <div class="image">
+                         <img src="img/stock.png">
+                            <a href="#6" class="prev"></a>
+                            <a href="#" class="close"></a>
+                            <a href="#2" class="next"></a>
+                     </div>
+                  </div>
+                  <div class="lightbox" id="2">
+                      <div class="image">
+                        <img src="img/iads.png">
+                        <a href="#1" class="prev"></a>
+                               <a href="#" class="close"></a>
+                               <a href="#3" class="next"></a>
+                          </div>
+                      </div>
+                      <div class="lightbox" id="3">
+                          <div class="image">
+                            <img src="img/foker.png">
+                            <a href="#2" class="prev"></a>
+                                  <a href="#" class="close"></a>
+                                  <a href="#4" class="next"></a>
+                         </div>
+                     </div>
+                      <div class="lightbox" id="4">
+                          <div class="image">
+                            <img src="img/helpus.png">
+                            <a href="#3" class="prev"></a>
+                                  <a href="#" class="close"></a>
+                                  <a href="#5" class="next"></a>
+                         </div>
+                     </div>
+                      <div class="lightbox" id="5">
+                          <div class="image">
+                            <img src="img/olu.png">
+                            <a href="#4" class="prev"></a>
+                                  <a href="#" class="close"></a>
+                                  <a href="#6" class="next"></a>
+                         </div>
+                     </div>
+                      <div class="lightbox" id="6">
+                          <div class="image">
+                            <img src="img/woocom_ionic.png">
+                            <a href="#5" class="prev"></a>
+                                  <a href="#" class="close"></a>
+                                  <a href="#1" class="next"></a>
+                         </div>
+                     </div> 
+                     <div class="lightbox" id="7">
+                        <div class="image">
+                          <img src="img/smartv.png">
+                          <a href="#4" class="prev"></a>
+                                <a href="#" class="close"></a>
+                                <a href="#6" class="next"></a>
+                       </div>
+                   </div>
+                    <div class="lightbox" id="8">
+                        <div class="image">
+                          <img src="img/nsbm.png">
+                          <a href="#5" class="prev"></a>
+                                <a href="#" class="close"></a>
+                                <a href="#1" class="next"></a>
+                       </div>
+                   </div> 
+                   <div class="lightbox" id="9">
+                    <div class="image">
+                      <img src="img/skyG.png">
+                      <a href="#4" class="prev"></a>
+                            <a href="#" class="close"></a>
+                            <a href="#6" class="next"></a>
+                   </div>
+               </div>
+                <div class="lightbox" id="10">
+                    <div class="image">
+                      <img src="img/ministry.png">
+                      <a href="#5" class="prev"></a>
+                            <a href="#" class="close"></a>
+                            <a href="#1" class="next"></a>
+                   </div>
+               </div> 
+               <div class="lightbox" id="10">
+                <div class="image">
+                  <img src="img/portfolio.png">
+                  <a href="#5" class="prev"></a>
+                        <a href="#" class="close"></a>
+                        <a href="#1" class="next"></a>
+               </div>
+           </div> 
                 </div> <!-- container / end -->
 
 
     </section>
 
     <!-- End Projects -->
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <section>
+            <div class="container">
+                    <div class="row">
+                       
+                        <h1>Thank You</h1>
+                        <div class="row wow fadeIn">
+                         <h3 style="text-align: center;">Created by <b>Iroshan Vithanage - 2018</b></h3>
+                    <br/><br/>
+                    <div class="col-md-12 wow fadeIn" style="text-align: center;">
+                
+                       
+                        <a href="https://codepen.io/iroshanav" target="_blank" class="btn-social btn-codepen"><i class="fa fa-codepen"></i></a>   
+                        <a href="https://www.facebook.com/iroshan.vithanage" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>       
+                        <a href="https://github.com/iroshanAV" target="_blank" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
+                        <a href="https://plus.google.com/u/0/+IroshanVithanage" target="_blank" class="btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.linkedin.com/in/iroshanav/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com/users/5222902/avi" target="_blank" class="btn-social btn-stack-overflow"><i class="fa fa-stack-overflow"></i></a>
+                        <a href="https://twitter.com/iroshanav?lang=en" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCA5IaTWbb9_ckFHNiQA9VxA?view_as=subscriber" target="_blank" class="btn-social btn-youtube"><i class="fa fa-youtube"></i></a>
+                      
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <!-- End Footer -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -282,24 +396,11 @@
                       });
           });</script>
           <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+          <script src="js/wow.min.js"></script>
           <script>
-                $('#think-tank').waypoint(function() {
-         alert('Change your background color of div');
-         $('.nav').css('color', 'yellow');
-     }, {
-         offset: '5%'
-     });
-               </script>
-               <script>$(document).ready(function(){
-                    //FANCYBOX
-                    //https://github.com/fancyapps/fancyBox
-                    $(".fancybox").fancybox({
-                        openEffect: "none",
-                        closeEffect: "none"
-                    });
-                });
-                   
-                  </script>
+          new WOW().init();
+          </script>
+                 
 
                  
   </body>
