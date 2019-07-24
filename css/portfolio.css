@@ -1,4 +1,12 @@
 
+
+/* To help mobile devices */
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+  }
+
+
 /* Full page background */
 .masthead {
     height: 100vh;
