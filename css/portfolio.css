@@ -11,9 +11,7 @@ html, body {
 .masthead {
     height: 100vh;
     min-height: 500px;
-    /* background-image: linear-gradient(rgba(236, 233, 230, 1), rgba(255, 255, 255, 1)), url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
-
-      background-image: url('../img/bg.jpg'); 
+    background-image: url('../img/bg.jpg'); 
     background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
@@ -40,7 +38,7 @@ html, body {
     display: inline-block;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+ 	animation: typing 8s steps(30, end), blink .75s step-end infinite;
     white-space: nowrap;
     font-size: 15px;
     font-weight: 700;
@@ -395,4 +393,8 @@ margin-right:2000px;
 
  .navbar-inner {
     background:transparent;
+}
+
+#About p {
+	font-weight:5000; 
 }
