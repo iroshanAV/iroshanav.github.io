@@ -3,5 +3,5 @@
 
 it's available at
 
-https://iroshanav.github.io/
+https://iroshanav.github.io
 
